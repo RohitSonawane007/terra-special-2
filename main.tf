@@ -9,7 +9,6 @@ module "ec2-dbserver" {
   source         = "./ec2-modules"
   ami            = "ami-0b6d9d3d33ba97d99"
   instance_type  = "t3.micro"
-  vpc_security_group_ids = [${aws_security_group.mysc.id}]
   name           = "server-2"
 }
 
